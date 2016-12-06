@@ -205,7 +205,7 @@ function timeline_shortcode($atts, $content = NULL) {
 
 			);
 			$atts = shortcode_atts($pairs, $atts );
-			var_dump($atts);			
+			//var_dump($atts);			
 			ob_start();
 			include (plugin_dir_path(__FILE__) . '/template/shortcode.php');
 			$out = ob_get_contents();
